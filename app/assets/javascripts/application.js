@@ -12,4 +12,15 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require modernizr-2.6.2.min
+//= require jquery.min
+//= require jquery.easing.1.3
+//= require bootstrap.min
+//= require jquery.waypoints.min
+//= require jquery.mb.YTPlayer.min
+//= require jquery.flexslider-min
+//= require owl.carousel.min
+//= require jquery.stellar.min
+//= require jquery.magnific-popup.min
+//= require magnific-popup-options
+//= require main
