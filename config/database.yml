@@ -14,7 +14,7 @@ development:
   <<: *default
   database: my_wedding_dev
   username: "gagan"
-  password: "gagan"
+  password: "viinfo65"
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
