@@ -375,7 +375,7 @@
 			<div class="col-md-3 col-sm-6">
 				<% @groups[0].each do |group_elem|%>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('/memory#{group_elem}.jpg')%>">
+						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
 							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
 						</a>
 					</div>
@@ -385,7 +385,7 @@
 			<div class="col-md-3 col-sm-6">
 				<% @groups[1].each do |group_elem|%>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('gallery-6.jpg')%>">
+						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
 							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
 						</a>
 					</div>
@@ -395,7 +395,7 @@
 			<div class="col-md-3 col-sm-6">
 				<% @groups[2].each do |group_elem| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('gallery-4.jpg')%>">
+						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
 							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
 						</a>
 					</div>
@@ -405,7 +405,7 @@
 			<div class="col-md-3 col-sm-6">
 				<% @groups[3].each do |group_elem| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('gallery-8.jpg')%>">
+						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
 							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
 						</a>
 					</div>
