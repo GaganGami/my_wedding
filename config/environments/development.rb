@@ -62,7 +62,7 @@ Rails.application.configure do
       s3_region: "ap-south-1",
     },
     :url => ":s3_host_name",
-    :s3_host_name => "s3.amazonaws.com",
+    :s3_host_name => "s3-ap-south-1.amazonaws.com", 
     :path => "/dev/:class/:id_partition/:style/:filename",
     :s3_protocol => :https
   }
