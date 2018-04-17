@@ -19,7 +19,7 @@ ActiveAdmin.register Memory do
       row :name
       row :memory_date
       row :photo do |memory|
-        image_tag memory.photo.url if memory.photo.present?
+        image_tag memory.photo.url(:medium) if memory.photo.present?
       end
       row :created_at
     end
