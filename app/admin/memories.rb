@@ -13,4 +13,15 @@ ActiveAdmin.register Memory do
     f.actions
   end
 
+  show do
+    attributes_table do
+      row :id
+      row :name
+      row :memory_date
+      row :photo do |memory|
+        image_tag memory.photo.url if memory.photo.present?
+      end
+      row :created_at
+    end
+  end
 end
