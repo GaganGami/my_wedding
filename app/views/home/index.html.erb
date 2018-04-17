@@ -1,3 +1,5 @@
+<%= javascript_include_tag "jquery.lazyload.js" %>
+
 <div class="qbootstrap-hero" data-section="home">
 	<div class="qbootstrap-overlay"></div>
 	<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url('https://s3.ap-south-1.amazonaws.com/gagan-weds-amruta/main_background_img1.jpg');">
@@ -302,7 +304,9 @@
 								</div>
 							</div>
 						</div>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						<p>Solicit your gracious presence to bless the Couple <i>Gagan & Amruta</i> for a new life on their Wedding Ceremony, followed by lunch.<br>
+						<b>VENUE:</b><br>
+						Gujarathi Wadi, Chopda, <br>Jalgaon Dist. Maharashtra</p>
 					</div>
 				</div>
 			</div>
@@ -385,7 +389,7 @@
 				<% @groups[0].each do |group_elem|%>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
+							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -395,7 +399,7 @@
 				<% @groups[1].each do |group_elem|%>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
+							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -405,7 +409,7 @@
 				<% @groups[2].each do |group_elem| %>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
+							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -415,7 +419,7 @@
 				<% @groups[3].each do |group_elem| %>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive" %>
+							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -424,3 +428,6 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$('img').lazyload();
+</script>
