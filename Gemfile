@@ -61,3 +61,4 @@ gem 'activeadmin'
 gem 'devise'
 gem "paperclip", "~> 6.0.0"
 gem 'aws-sdk'
+gem "lazyload-rails"
