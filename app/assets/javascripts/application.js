@@ -17,7 +17,6 @@
 //= require jquery.easing.1.3
 //= require bootstrap.min
 //= require jquery.waypoints.min
-//= require jquery.mb.YTPlayer.min
 //= require jquery.flexslider-min
 //= require owl.carousel.min
 //= require jquery.stellar.min
