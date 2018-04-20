@@ -389,8 +389,8 @@
 			<div class="col-md-3 col-sm-6">
 				<% @memories[0].each do |memory|%>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= memory.photo.url %>">
-							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory %>">
+							<%= image_tag memory, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -399,8 +399,8 @@
 			<div class="col-md-3 col-sm-6">
 				<% @memories[1].each do |memory|%>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= memory.photo.url %>">
-							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory %>">
+							<%= image_tag memory, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -409,8 +409,8 @@
 			<div class="col-md-3 col-sm-6">
 				<% @memories[2].each do |memory| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= memory.photo.url%>">
-							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory %>">
+							<%= image_tag memory, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -419,8 +419,8 @@
 			<div class="col-md-3 col-sm-6">
 				<% @memories[3].each do |memory| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= memory.photo.url %>">
-							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory %>">
+							<%= image_tag memory, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
@@ -429,5 +429,5 @@
 	</div>
 </div>
 <script type="text/javascript">
-	$('img').lazyload();
+	// $('img').lazyload();
 </script>
