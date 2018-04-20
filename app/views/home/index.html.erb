@@ -1,4 +1,4 @@
-<%= javascript_include_tag "jquery.lazyload.js" %>
+<%#= javascript_include_tag "jquery.lazyload.js" %>
 
 <div class="qbootstrap-hero" data-section="home">
 	<div class="qbootstrap-overlay"></div>
@@ -390,7 +390,7 @@
 				<% @memories[0].each do |memory|%>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= Rails.env.production? ? memory.photo.url : memory %>">
-							<%= image_tag memory, class: "img-responsive lazy_load_img", lazy: true %>
+							<%= image_tag memory, class: "img-responsive lazy_load_img" %>
 						</a>
 					</div>
 				<% end %>
@@ -400,7 +400,7 @@
 				<% @memories[1].each do |memory|%>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= Rails.env.production? ? memory.photo.url : memory %>">
-							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img", lazy: true %>
+							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img" %>
 						</a>
 					</div>
 				<% end %>
@@ -410,7 +410,7 @@
 				<% @memories[2].each do |memory| %>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= Rails.env.production? ? memory.photo.url : memory %>">
-							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img", lazy: true %>
+							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img" %>
 						</a>
 					</div>
 				<% end %>
@@ -420,7 +420,7 @@
 				<% @memories[3].each do |memory| %>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= Rails.env.production? ? memory.photo.url : memory %>">
-							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img", lazy: true %>
+							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img" %>
 						</a>
 					</div>
 				<% end %>
@@ -429,5 +429,5 @@
 	</div>
 </div>
 <script type="text/javascript">
-	$('.lazy_load_img').lazyload();
+	// $('.lazy_load_img').lazyload();
 </script>
