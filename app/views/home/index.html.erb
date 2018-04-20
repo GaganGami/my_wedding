@@ -419,8 +419,8 @@
 			<div class="col-md-3 col-sm-6">
 				<% @memories[3].each do |memory| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + memory.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{memory}.jpg", class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory.photo.url %>">
+							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
