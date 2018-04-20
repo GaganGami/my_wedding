@@ -390,7 +390,7 @@
 				<% @memories[0].each do |memory|%>
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="<%= Rails.env.production? ? memory.photo.url : memory %>">
-							<%= image_tag memory, class: "img-responsive lazy_load_img" %>
+							<%= image_tag Rails.env.production? ? memory.photo.url(:medium) : memory, class: "img-responsive lazy_load_img" %>
 						</a>
 					</div>
 				<% end %>
@@ -428,6 +428,3 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	// $('.lazy_load_img').lazyload();
-</script>
