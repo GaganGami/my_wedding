@@ -185,7 +185,7 @@
 </div>
 
 <!-- <div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings" data-stellar-background-ratio="0.5" style="background-image: url(<%#= asset_path('cover_bg_1.jpg')%>);"> -->
-<div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings" data-stellar-background-ratio="0.5" style="background-image: url('https://s3-ap-south-1.amazonaws.com/gagan-weds-amruta-dev/memory/000/000/040/original/memory36.jpg');">
+<div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings" data-stellar-background-ratio="0.5" style='background-image: url(<%= asset_path('cover_bg_1.jpg')%>);'>
 <div class="overlay"></div>	
 	<div class="container">
 		<div class="row animate-box">
@@ -387,45 +387,44 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
-				<% @groups[0].each do |group_elem|%>
+				<% @memories[0].each do |memory|%>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory.photo.url %>">
+							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
 			</div>
 
 			<div class="col-md-3 col-sm-6">
-				<% @groups[1].each do |group_elem|%>
+				<% @memories[1].each do |memory|%>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory.photo.url %>">
+							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
 			</div>
 			
 			<div class="col-md-3 col-sm-6">
-				<% @groups[2].each do |group_elem| %>
+				<% @memories[2].each do |memory| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= memory.photo.url%>">
+							<%= image_tag memory.photo.url, class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
 			</div>
 			
 			<div class="col-md-3 col-sm-6">
-				<% @groups[3].each do |group_elem| %>
+				<% @memories[3].each do |memory| %>
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + group_elem.to_s + '.jpg')%>">
-							<%= image_tag "memorries/memory#{group_elem}.jpg", class: "img-responsive", lazy: true %>
+						<a class="gallery-img image-popup" href="<%= asset_path('/assets/memorries/memory' + memory.to_s + '.jpg')%>">
+							<%= image_tag "memorries/memory#{memory}.jpg", class: "img-responsive", lazy: true %>
 						</a>
 					</div>
 				<% end %>
 			</div>
-
 		</div>
 	</div>
 </div>
